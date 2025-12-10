@@ -1040,19 +1040,19 @@ class GaussianDiffusion(nn.Module):
         # Note:  choose any one of the below
         #---------------------------------------start--------------------------------------------------#
         ####################### original diffuser only
-        # x = xp1      
-        # xr = 2*1/(self.norm_maxs[1] - self.norm_mins[1])
-        # yr = 2*1/(self.norm_maxs[0] - self.norm_mins[0])
-        # off_x = 2*(5.8-0.5 - self.norm_mins[1])/(self.norm_maxs[1] - self.norm_mins[1]) - 1
-        # off_y = 2*(5-0.5 - self.norm_mins[0])/(self.norm_maxs[0] - self.norm_mins[0]) - 1
-        # b = ((x[:,2:3] - off_y)/yr)**2 + ((x[:,3:4] - off_x)/xr)**2 - 1
-        # self.safe1 = torch.min(b[:,0])
-        # xr = 2*1/(self.norm_maxs[1] - self.norm_mins[1])
-        # yr = 2*1/(self.norm_maxs[0] - self.norm_mins[0])
-        # off_x = 2*(5.3-0.5 - self.norm_mins[1])/(self.norm_maxs[1] - self.norm_mins[1]) - 1
-        # off_y = 2*(2-0.5 - self.norm_mins[0])/(self.norm_maxs[0] - self.norm_mins[0]) - 1
-        # b = ((x[:,2:3] - off_y)/yr)**4 + ((x[:,3:4] - off_x)/xr)**4 - 1
-        # self.safe2 = torch.min(b[:,0])
+        x = xp1      
+        xr = 2*1/(self.norm_maxs[1] - self.norm_mins[1])
+        yr = 2*1/(self.norm_maxs[0] - self.norm_mins[0])
+        off_x = 2*(5.8-0.5 - self.norm_mins[1])/(self.norm_maxs[1] - self.norm_mins[1]) - 1
+        off_y = 2*(5-0.5 - self.norm_mins[0])/(self.norm_maxs[0] - self.norm_mins[0]) - 1
+        b = ((x[:,2:3] - off_y)/yr)**2 + ((x[:,3:4] - off_x)/xr)**2 - 1
+        self.safe1 = torch.min(b[:,0])
+        xr = 2*1/(self.norm_maxs[1] - self.norm_mins[1])
+        yr = 2*1/(self.norm_maxs[0] - self.norm_mins[0])
+        off_x = 2*(5.3-0.5 - self.norm_mins[1])/(self.norm_maxs[1] - self.norm_mins[1]) - 1
+        off_y = 2*(2-0.5 - self.norm_mins[0])/(self.norm_maxs[0] - self.norm_mins[0]) - 1
+        b = ((x[:,2:3] - off_y)/yr)**4 + ((x[:,3:4] - off_x)/xr)**4 - 1
+        self.safe2 = torch.min(b[:,0])
 
         ####################### truncate (shield) and GD (classifier-guidance/potential-based)
         # x = self.Shield(x, xp1)

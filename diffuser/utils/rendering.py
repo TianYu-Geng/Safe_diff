@@ -310,40 +310,40 @@ class MazeRenderer:
         plt.plot(x, y, c='red', zorder = 10)
 
         # ###################### maze-large-v1 more obstacles - narrow passage
-        # x = 1/12*np.sqrt(np.abs(np.cos(theta)))*np.sign(np.cos(theta)) + 5.5/12
-        # y = 1/9*np.sqrt(np.abs(np.sin(theta)))*np.sign(np.sin(theta)) + 2/9
-        # plt.plot(x, y, c='red', zorder = 10)
-        # plt.fill(x, y, "red", alpha = 0.3)
+        x = 1/12*np.sqrt(np.abs(np.cos(theta)))*np.sign(np.cos(theta)) + 5.5/12
+        y = 1/9*np.sqrt(np.abs(np.sin(theta)))*np.sign(np.sin(theta)) + 2/9
+        plt.plot(x, y, c='red', zorder = 10)
+        plt.fill(x, y, "red", alpha = 0.3)
 
-        # theta = np.linspace(0,2*np.pi, 100)
-        # x = 1/12*np.sqrt(np.abs(np.cos(theta)))*np.sign(np.cos(theta)) + 5.5/12
-        # y = 1/9*np.sqrt(np.abs(np.sin(theta)))*np.sign(np.sin(theta)) + 5/9
-        # plt.plot(x, y, c='red', zorder = 10)
-        # plt.fill(x, y, "red", alpha = 0.3)
+        theta = np.linspace(0,2*np.pi, 100)
+        x = 1/12*np.sqrt(np.abs(np.cos(theta)))*np.sign(np.cos(theta)) + 5.5/12
+        y = 1/9*np.sqrt(np.abs(np.sin(theta)))*np.sign(np.sin(theta)) + 5/9
+        plt.plot(x, y, c='red', zorder = 10)
+        plt.fill(x, y, "red", alpha = 0.3)
 
-        # theta = np.linspace(0,2*np.pi, 100)
-        # x = 1/12*np.sqrt(np.abs(np.cos(theta)))*np.sign(np.cos(theta)) + 3/12
-        # y = 0.5*1/9*np.sqrt(np.abs(np.sin(theta)))*np.sign(np.sin(theta)) + 2.5/9
-        # plt.plot(x, y, c='red', zorder = 10)
-        # plt.fill(x, y, "red", alpha = 0.3)
+        theta = np.linspace(0,2*np.pi, 100)
+        x = 1/12*np.sqrt(np.abs(np.cos(theta)))*np.sign(np.cos(theta)) + 3/12
+        y = 0.5*1/9*np.sqrt(np.abs(np.sin(theta)))*np.sign(np.sin(theta)) + 2.5/9
+        plt.plot(x, y, c='red', zorder = 10)
+        plt.fill(x, y, "red", alpha = 0.3)
 
-        # theta = np.linspace(0,2*np.pi, 100)
-        # x = 1.8*1/12*np.sqrt(np.abs(np.cos(theta)))*np.sign(np.cos(theta)) + 8.5/12
-        # y = 1.8*1/9*np.sqrt(np.abs(np.sin(theta)))*np.sign(np.sin(theta)) + 3.5/9
-        # plt.plot(x, y, c='red', zorder = 10)
-        # plt.fill(x, y, "red", alpha = 0.3)
+        theta = np.linspace(0,2*np.pi, 100)
+        x = 1.8*1/12*np.sqrt(np.abs(np.cos(theta)))*np.sign(np.cos(theta)) + 8.5/12
+        y = 1.8*1/9*np.sqrt(np.abs(np.sin(theta)))*np.sign(np.sin(theta)) + 3.5/9
+        plt.plot(x, y, c='red', zorder = 10)
+        plt.fill(x, y, "red", alpha = 0.3)
 
-        # theta = np.linspace(0,2*np.pi, 100)
-        # x = 1/12*np.sqrt(np.abs(np.cos(theta)))*np.sign(np.cos(theta)) + 7.6/12
-        # y = 1/9*np.sqrt(np.abs(np.sin(theta)))*np.sign(np.sin(theta)) + 7/9
-        # plt.plot(x, y, c='red', zorder = 10)
-        # plt.fill(x, y, "red", alpha = 0.3)
+        theta = np.linspace(0,2*np.pi, 100)
+        x = 1/12*np.sqrt(np.abs(np.cos(theta)))*np.sign(np.cos(theta)) + 7.6/12
+        y = 1/9*np.sqrt(np.abs(np.sin(theta)))*np.sign(np.sin(theta)) + 7/9
+        plt.plot(x, y, c='red', zorder = 10)
+        plt.fill(x, y, "red", alpha = 0.3)
 
-        # theta = np.linspace(0,2*np.pi, 100)
-        # x = 1/12*np.sqrt(np.abs(np.cos(theta)))*np.sign(np.cos(theta)) + 10/12
-        # y = 1/9*np.sqrt(np.abs(np.sin(theta)))*np.sign(np.sin(theta)) + 6.3/9
-        # plt.plot(x, y, c='red', zorder = 10)
-        # plt.fill(x, y, "red", alpha = 0.3)
+        theta = np.linspace(0,2*np.pi, 100)
+        x = 1/12*np.sqrt(np.abs(np.cos(theta)))*np.sign(np.cos(theta)) + 10/12
+        y = 1/9*np.sqrt(np.abs(np.sin(theta)))*np.sign(np.sin(theta)) + 6.3/9
+        plt.plot(x, y, c='red', zorder = 10)
+        plt.fill(x, y, "red", alpha = 0.3)
 
         ###################################################  umaze
         # theta = np.linspace(0,2*np.pi, 100)
